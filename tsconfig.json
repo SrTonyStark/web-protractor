@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "module": "commonjs",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "typeRoots": ["./node_modules/@types"],
+    "outDir": "./dist",
+    "mapRoot": "./dist",
+    "sourceMap": true
+  },
+  "exclude": ["node_modules", "plugins.ts"],
+  "include": ["config", "features", "pages", "specs", "support"]
+}

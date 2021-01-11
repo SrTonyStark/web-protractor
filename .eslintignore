@@ -1,0 +1,6 @@
+global.step.ts
+report.ts
+.gitignore
+reports
+*.js
+*.spec.*

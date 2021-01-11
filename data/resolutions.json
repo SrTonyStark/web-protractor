@@ -1,0 +1,19 @@
+{
+  "desktop": {
+    "height": 1280,
+    "width": 1920,
+    "device": "desktop"
+  },
+  "tablet": {
+    "height": 1024,
+    "width": 768,
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/60.0.3112.72 Mobile/15A5327g Safari/602.1",
+    "device": "iPad"
+  },
+  "mobile": {
+    "height": 1024,
+    "width": 375,
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/60.0.3112.89 Mobile/15A5370a Safari/602.1",
+    "device": "iPhone 11"
+  }
+}

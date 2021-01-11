@@ -1,0 +1,25 @@
+{
+  "recommendations": [
+    "alexkrechik.cucumberautocomplete",
+    "CoenraadS.bracket-pair-colorizer",
+    "cssho.vscode-svgviewer",
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "eg2.vscode-npm-script",
+    "esbenp.prettier-vscode",
+    "hediet.vscode-drawio",
+    "kisstkondoros.vscode-codemetrics",
+    "KnisterPeter.vscode-commitizen",
+    "mhutchie.git-graph",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode-remote.remote-wsl",
+    "ms-vsliveshare.vsliveshare",
+    "PKief.material-icon-theme",
+    "redhat.vscode-yaml",
+    "SonarSource.sonarlint-vscode",
+    "techer.open-in-browser",
+    "wmaurer.change-case",
+    "yzhang.markdown-all-in-one"
+  ]
+}

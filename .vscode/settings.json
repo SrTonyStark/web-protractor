@@ -1,0 +1,13 @@
+{
+  "cucumberautocomplete.steps": ["features/steps/*.ts"],
+  "cucumberautocomplete.syncfeatures": "features/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": false,
+  "cucumberautocomplete.smartSnippets": true,
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": true,
+    "other": true
+  },
+  "cucumberautocomplete.gherkinDefinitionPart": "(Given|When|Then)\\(",
+  "markdown.extension.toc.levels": "2..6"
+}
