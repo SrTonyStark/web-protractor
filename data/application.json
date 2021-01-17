@@ -1,14 +1,5 @@
 {
   "local": {
-    "baseUrl": "http://localhost:4200"
-  },
-  "dev": {
-    "baseUrl": "https://server.int.com"
-  },
-  "uat": {
-    "baseUrl": "https://server.uat.com"
-  },
-  "live": {
-    "baseUrl": "https://demoqa.com"
+    "baseUrl": "https://www.idealista.com/"
   }
 }

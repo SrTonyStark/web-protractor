@@ -1,11 +1,12 @@
 import { Given } from 'cucumber';
-import { browser } from 'protractor';
+import { idealistaPage } from '../../pages';
 
-Given('sync step', () => {
-  // TODO: Given Sync Step
+Given('Estar en la homepage', async () => {
+  await idealistaPage.HomepageIsPresent();
 });
 
-Given('async step', async () => {
-  await browser.sleep(100);
-  // TODO: Given ASync Step
+Given('Se accede al area de usuarios', async () => {
+  await idealistaPage.accessLogin();
 });
+
+

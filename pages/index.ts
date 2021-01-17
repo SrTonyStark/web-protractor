@@ -1,1 +1,2 @@
-export { default as textboxPage } from './textbox.page';
+export { default as idealistaPage } from './idealistaPage';
+export { default as loginPage } from './loginPage';

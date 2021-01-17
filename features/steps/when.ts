@@ -1,11 +1,7 @@
 import { When } from 'cucumber';
-import { browser } from 'protractor';
+import { loginPage } from '../../pages';
 
-When('sync step', () => {
-  // TODO: Given Sync Step
-});
 
-When('async step', async () => {
-  await browser.sleep(100);
-  // TODO: Given ASync Step
+When('Se introduce usuario y contraseña', async () => {
+  await loginPage.accessAccount();
 });
