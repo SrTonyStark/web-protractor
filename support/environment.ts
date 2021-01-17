@@ -19,6 +19,5 @@ export function listEnvVariables(): void {
 
 export enum AppEnvironmnet {
   Local = 'local',
-  DEV = 'dev',
   LIVE = 'live',
 }

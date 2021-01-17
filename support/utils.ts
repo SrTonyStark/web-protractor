@@ -44,7 +44,7 @@ export const hasIntegratedEnvironment = (): boolean => {
 };
 
 export const hasAuthentication = (): boolean => {
-  const integratedEnvironmnets = [AppEnvironmnet.DEV, AppEnvironmnet.LIVE];
+  const integratedEnvironmnets = [AppEnvironmnet.LIVE];
   return integratedEnvironmnets.includes(<AppEnvironmnet>env.appEnv);
 };
 
