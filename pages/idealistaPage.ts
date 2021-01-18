@@ -23,7 +23,7 @@ class idealistaPage extends Page {
   }
 
   async get() {
-    await super.get('/login');
+    await super.get('');
   }
 
   async HomepageIsPresent() {

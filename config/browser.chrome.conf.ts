@@ -17,7 +17,7 @@ export const capabilitiesChrome = {
   'shardTestFiles': true,
   'browserName': 'chrome',
   'chromeOptions': {
-    'args': [...optionsDefault, ...(env.headless ? optionsHeadless : [])],
+    'args': ['no-sandbox', "--disable-browser-side-navigation", "--allow-insecure-localhost", "--test-type"],
   },
   'loggingPrefs': {
     'driver': 'ALL',

@@ -1,4 +1,4 @@
-import { $, by, element, ElementFinder } from 'protractor';
+import { $, $$, by, element, ElementFinder } from 'protractor';
 import { Page } from './page';
 import { userData } from '../data';
 
@@ -10,9 +10,9 @@ class LoginPage extends Page {
 
   constructor() {
     super();
-    this.usernameInput = element(by.css('#email'));
-    this.passwordInput = $('#password');
-    this.submitButton = $('button[id="login"]');
+    this.usernameInput = element(by.id('user_login'));
+    this.passwordInput = element(by.id('user_pass'));
+    this.submitButton = element(by.id('wp-submit'));
     this.alertMessage = element(by.css('#flash-messages > div'));
   }
 

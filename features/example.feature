@@ -1,10 +1,8 @@
-@Idealista
-Feature: Idealista
-
+@Wordpress
+Feature: Wordpress
   Scenario: Usuario accede al home e inicia sesion
-    Given Estar en la homepage
-    And Se accede al area de usuarios
-    When Se introduce usuario y contraseña 
+    Given Estar en el login
+    When Se introducen los credenciales
     Then Se accede a la cuenta
 
   

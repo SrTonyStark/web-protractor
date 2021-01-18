@@ -21,14 +21,16 @@ AfterAll(function () {});
 Before(function (scenario) {});
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-After(async function (scenario) {
-  const logName = getLogName(scenario);
-  await generateLogs(logName);
 
-  const imageBase64 = await takeScreenshot();
-  this.attach(imageBase64, 'image/png');
+// ** Descomentar para reiniciar la sesión del navegador **
+// After(async function (scenario) {
+//   const logName = getLogName(scenario);
+//   await generateLogs(logName);
 
-  await browser.driver.manage().deleteAllCookies();
-  await browser.executeScript('window.sessionStorage.clear();');
-  await browser.executeScript('window.localStorage.clear();');
-});
+//   const imageBase64 = await takeScreenshot();
+//   this.attach(imageBase64, 'image/png');
+
+//   await browser.driver.manage().deleteAllCookies();
+//   await browser.executeScript('window.sessionStorage.clear();');
+//   await browser.executeScript('window.localStorage.clear();');
+// });
