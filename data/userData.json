@@ -1,7 +1,9 @@
 {
   "default": {
     "email": "opensourcecms",
-    "pwd": "opensourcecms"
+    "pwd": "opensourcecms",
+    "comment": "Test1",
+    "search": "hello"
   },  
   "idealista": {
       "email": "javijate42@gmail.com",

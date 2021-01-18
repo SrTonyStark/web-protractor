@@ -32,7 +32,7 @@ export const cucumberConfig = {
     {
       package: 'protractor-multiple-cucumber-html-reporter-plugin',
       options: {
-        reportName: 'Report Name Example',
+        reportName: 'Wordpress Test',
         automaticallyGenerateReport: true,
         removeExistingJsonReportFile: true,
         displayDuration: true,

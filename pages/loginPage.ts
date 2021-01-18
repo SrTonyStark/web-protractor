@@ -1,4 +1,4 @@
-import { $, $$, by, element, ElementFinder } from 'protractor';
+import { by, element, ElementFinder } from 'protractor';
 import { Page } from './page';
 import { userData } from '../data';
 
