@@ -7,10 +7,7 @@
  * injected.
  * https://github.com/cucumber/cucumber-js/blob/master/docs/faq.md
  */
-import { After, AfterAll, Before, BeforeAll, setDefaultTimeout } from 'cucumber';
-import { browser } from 'protractor';
-import { generateLogs, getLogName } from '../../support/protractorLogs';
-import { takeScreenshot } from '../../support/screenshot';
+import { AfterAll, Before, BeforeAll, setDefaultTimeout } from 'cucumber';
 
 setDefaultTimeout(30 * 1000);
 

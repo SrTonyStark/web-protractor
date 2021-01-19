@@ -1,5 +1,5 @@
 import JasmineAllureReporter from 'jasmine-allure-reporter';
-import { SpecReporter } from 'jasmine-spec-reporter';
+import { SpecReporter, StacktraceOption } from 'jasmine-spec-reporter';
 import { browser } from 'protractor';
 
 export const jasmineConfig = {
@@ -25,6 +25,7 @@ const jasmineSpecReporter = new SpecReporter({
   spec: {
     displayFailed: true,
     displayDuration: true,
+    displayStacktrace: StacktraceOption.RAW,
   },
 });
 

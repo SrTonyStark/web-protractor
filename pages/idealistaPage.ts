@@ -1,4 +1,4 @@
-import { $, Browser, browser, ElementFinder } from 'protractor';
+import { $, ElementFinder } from 'protractor';
 import { Page } from './page';
 
 class idealistaPage extends Page {

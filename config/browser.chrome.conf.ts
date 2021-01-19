@@ -1,15 +1,13 @@
 import { env } from '../support/environment';
-import * as utils from '../support/utils';
 import { metadata } from './metadata.conf';
-
-const resolution = utils.getResolution();
 
 const optionsHeadless: string[] = ['--headless', '--disable-gpu'];
 
 const optionsDefault: string[] = [
-  // '--ignore-certificate-errors',
-  // '--allow-insecure-localhost',
-  `--window-size=${resolution.width},${resolution.height}`,
+  'no-sandbox',
+  '--disable-browser-side-navigation',
+  '--allow-insecure-localhost',
+  '--test-type',
 ];
 
 export const capabilitiesChrome = {
@@ -17,7 +15,7 @@ export const capabilitiesChrome = {
   'shardTestFiles': true,
   'browserName': 'chrome',
   'chromeOptions': {
-    'args': ['no-sandbox', "--disable-browser-side-navigation", "--allow-insecure-localhost", "--test-type"],
+    'args': [...optionsDefault, ...(env.headless ? optionsHeadless : [])],
   },
   'loggingPrefs': {
     'driver': 'ALL',

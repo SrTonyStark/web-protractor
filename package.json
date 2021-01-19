@@ -15,7 +15,6 @@
     "spec:file": "protractor dist/config/spec.conf.js --specs",
     "prebdd": "npm run clean && npm run build",
     "bdd": "protractor dist/config/bdd.conf.js",
-    "postbdd": "node dist/support/integration.js",
     "prebdd:file": "npm run clean && npm run build",
     "bdd:file": "protractor dist/config/bdd.conf.js --specs",
     "report": "allure generate ./reports/allure -o ./reports/allure/portal -c && allure open ./reports/allure/portal",

@@ -16,8 +16,3 @@ export const env = {
 export function listEnvVariables(): void {
   console.log('Environment VARS:', JSON.stringify(env));
 }
-
-export enum AppEnvironmnet {
-  Local = 'local',
-  LIVE = 'live',
-}

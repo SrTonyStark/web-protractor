@@ -1,7 +1,7 @@
 # Web Postman & API  
 
 This project contains the test scripts to validate a web projecto.
-Hola Juan, 
+
 E2E automation with **TypeScript**, **ProtractorJS**, **Specs (Unit Test)** and **Cucumber (BDD)**.
 
 ![](docs/ts-protractor-cucumber.png)

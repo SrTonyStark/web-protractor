@@ -1,17 +1,16 @@
-import { ElementFinder, element, by } from 'protractor';
+import { ElementFinder, element, by, ElementArrayFinder } from 'protractor';
 import { Page } from './page';
 import { userData } from '../data';
 
 class wordpressPage extends Page {
   homepageID: ElementFinder;
-  userAccess: ElementFinder;
   userMenu: ElementFinder;
-  userAds: ElementFinder;
   menuHome: ElementFinder;
   postTitle: ElementFinder;
   commentBox: ElementFinder;
   postCommentButton: ElementFinder;
   homeHeader: ElementFinder;
+  lastComment: ElementArrayFinder;
 
   constructor() {
     super();
@@ -22,29 +21,19 @@ class wordpressPage extends Page {
     this.commentBox = element(by.id('comment'));
     this.postCommentButton = element(by.id('submit'));
     this.homeHeader = element(by.className('custom-header'));
+    this.lastComment = element.all(by.css('.comment-content p'));
   }
 
   async get() {
     await super.get('');
   }
 
-  async HomepageIsPresent() {
+  async homepageIsPresent() {
     await super.waitForDisplayed(this.homepageID);
-    // const text = await this.homepageID.getText();
-    // if (text.includes("opensourcecms")) {
-    //   return true;
-    // } else {
-    //   return false;
-    // }
-  }
-
-  async accessLogin() {
-    await super.waitForClickable(this.userAccess);
-    this.userAccess.click();
   }
 
   async loginSuccess() {
-    await super.waitForDisplayed(this.userMenu);
+    return await super.waitForDisplayed(this.userMenu);
   }
 
   async homeMenuAccess() {
@@ -58,10 +47,17 @@ class wordpressPage extends Page {
   }
 
   async sendComment() {
+    const inputText = `${userData.default.comment} ${Math.floor(Math.random() * 10)}`;
     await super.waitForPresent(this.commentBox);
     await this.commentBox.click();
-    await this.commentBox.sendKeys(userData.default.comment);
+    await this.commentBox.sendKeys(inputText);
     await this.postCommentButton.click();
+    return inputText;
+  }
+
+  async getLastComment() {
+    // await super.waitForDisplayed(await this.lastComment[0]);
+    // return await this.lastComment[this.lastComment.length - 1].getText()
   }
 
   async homeVerify() {
